@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 28px 24px 24px 28px;
+}
+
+.menuBar {
+  display: inline-block;
+  cursor: pointer;
+}
+.bar1,
+.bar2 {
+  width: 20px;
+  height: 1px;
+  background: #000000;
+  margin: 4px 0px;
+  transition: 0.4s;
+}
