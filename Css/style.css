@@ -149,6 +149,7 @@ label li {
   object-fit: cover;
   margin-bottom: -3px;
   position: relative;
+  max-height: 500px;
 }
 .content_container {
   width: 100%;
