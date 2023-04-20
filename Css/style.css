@@ -443,6 +443,17 @@ label li {
 .classic_navbar {
   display: none;
 }
+.tablet_images {
+  display: none;
+}
+.desktop_images {
+  display: none;
+}
+.footer_tablet2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 @media (min-width: 768px) {
   #hamburger {
     display: none;
@@ -484,5 +495,109 @@ label li {
   #nav_bar {
     display: flex;
     align-items: center;
+  }
+  .create_and_share {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .beautiful_stories {
+    display: flex;
+  }
+  .designed_for_everyone {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .mobile_images {
+    display: none;
+  }
+  .tablet_images {
+    display: flex;
+  }
+  .content_container {
+    width: auto;
+    min-width: 495px;
+    height: 650px;
+  }
+  .content_child {
+    padding: 172px 54px;
+    height: 306px;
+  }
+  .content_childF {
+    padding: 172px 54px;
+  }
+  .image_container {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: -3px;
+    position: relative;
+    min-height: 650px;
+  }
+  .firstH {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 4.16667px;
+    margin: 0px;
+  }
+  .content_headerTxt {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 4.16667px;
+    margin: 0px;
+  }
+  #colorful_divider {
+    display: none;
+  }
+  #colorful_divider_left {
+    width: 6px;
+    height: 304px;
+    top: 245px;
+    background: linear-gradient(
+      26.57deg,
+      #ffc593 0%,
+      #bc7198 43.29%,
+      #5a77ff 83.33%
+    );
+    position: absolute;
+  }
+  .tablet_view {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 50%);
+    align-items: start;
+  }
+  .footer_tablet2 {
+    align-items: end;
+    gap: 120px;
+  }
+  .footer_tablet1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer_inner {
+    padding: 64px 40px 64px 40px;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .item1 {
+    order: 1;
+    width: 170px;
+  }
+  .item2 {
+    order: 3;
+  }
+  .item3 {
+    order: 2;
+    width: 154px;
+  }
+  .footer_nav {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 32px 0px 110px 0px;
+    gap: 26px;
+  }
+  .footer_contact {
+    margin-top: -60px;
+    margin-bottom: -60px;
   }
 }
