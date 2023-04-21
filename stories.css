@@ -38,8 +38,8 @@ body {
 }
 
 .none {
-  height: 18px;
-  width: 18px;
+  height: 16px;
+  width: 16px;
   display: none;
 }
 .none img {
@@ -83,6 +83,7 @@ header nav button {
 
 .invisible {
   opacity: 0;
+  transition: all 2s;
 }
 
 .opened {
