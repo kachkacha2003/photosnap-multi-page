@@ -94,6 +94,9 @@ header nav button {
 .img1 {
   margin-bottom: -5px;
 }
+.img1 img {
+  display: block;
+}
 
 .header-content {
   padding: 48px 29px 48px 28px;
@@ -173,7 +176,7 @@ header nav button {
     rgba(0, 0, 0, 0.661222) 100%
   );
 }
-.card-footer1 {
+.card-footer1 a {
   display: flex;
   gap: 16px;
   padding-top: 9px;
@@ -232,6 +235,7 @@ footer .footer-logo {
 a {
   text-decoration: none;
   color: #ffffff;
+  cursor: pointer;
 }
 
 footer .social-logo {
@@ -257,6 +261,7 @@ footer .flex {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #ffffff;
+  justify-content: center;
 }
 .social-logo path {
   fill: #ffffff;
@@ -273,4 +278,144 @@ footer .flex {
   color: #ffffff;
   mix-blend-mode: normal;
   opacity: 0.5;
+}
+
+@media screen and (min-width: 768px) {
+  .img1 img {
+    display: none;
+  }
+
+  .header-content {
+    background-image: url(stories/tablet/moon-of-appalacia.jpg);
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
+    padding: 122px 342px 122px 39px;
+    display: flex;
+    gap: 24px;
+    text-align: start;
+  }
+  .spancolor {
+    margin-top: -8px;
+  }
+  .section2 {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .invisible {
+    opacity: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    transform: translateY(22%);
+    transition: all 0s;
+    padding: 16px;
+  }
+  header {
+    padding-bottom: 0;
+  }
+
+  header img {
+    margin-left: 11px;
+    z-index: 999;
+    transform: translateY(70%);
+  }
+
+  header hr {
+    display: none;
+  }
+
+  .invisible ul {
+    flex-direction: row;
+    gap: 37px;
+  }
+
+  .invisible ul li {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    color: #000000;
+  }
+  .invisible button {
+    width: 158px;
+    margin-left: 37px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    border: none;
+  }
+  .menuBar {
+    opacity: 0;
+  }
+
+  .header-content h1 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 4.16667px;
+  }
+  .header-content h3 {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+  }
+
+  .section1 .header-content .p2 {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .grid1 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .grid2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+  }
+  .navigation .flex {
+    flex-direction: row;
+  }
+  footer .social-logo {
+    position: absolute;
+  }
+  .reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .copyright {
+    padding: 0px;
+  }
+  footer .container {
+    padding: 64px 39px;
+  }
+
+  footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 56px;
+    gap: 33px;
+  }
+  footer {
+    background: #000000;
+    color: #ffffff;
+  }
+
+  .grid1 .footer-logo {
+    margin-top: 25px;
+    margin-bottom: -20px;
+  }
 }
