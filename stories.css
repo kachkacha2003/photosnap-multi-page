@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "DM Sans", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 28px 24px 24px 28px;
+  position: relative;
+}
+
+.menuBar {
+  display: inline-block;
+  cursor: pointer;
+  opacity: 1;
+}
+.bar1,
+.bar2 {
+  width: 20px;
+  height: 1px;
+  background: #000000;
+  margin: 4px 0px;
+  transition: 0.4s;
+}
+.clicked {
+  opacity: 0;
+  width: 20px;
+  height: 1px;
+  background: #000000;
+}
+
+.none {
+  height: 18px;
+  width: 18px;
+  display: none;
+}
+.none img {
+  width: 100%;
+  height: 100%;
+}
+
+.click {
+  display: block;
+}
+
+header nav {
+  width: 100%;
+  min-height: 100%;
+  background: #ffffff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateY(100%);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+nav ul li {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #000000;
+}
+header nav button {
+  background: #000000;
+  width: 100%;
+  min-height: 48px;
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.opened {
+  opacity: 1;
+  transition: all 2s;
+}
+
+.img1 {
+  margin-bottom: -5px;
+}
+
+.header-content {
+  padding: 48px 29px 48px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: #000000;
+}
+
+.header-content h3,
+.card h3 {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.header-content h1 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 3.33333px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.section1 .header-content .p1 {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+}
+
+.section1 .header-content .p2 {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+  margin-top: 9px;
+}
+
+.spancolor {
+  display: flex;
+  gap: 9px;
+}
+
+.header-content span {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+  color: #ffffff;
+}
+
+.img-bg {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.0001) 0.27%,
+    rgba(0, 0, 0, 0.661222) 100%
+  );
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  padding: 215px 41px 40px 41px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.0001) 0.27%,
+    rgba(0, 0, 0, 0.661222) 100%
+  );
+}
+.card-footer1 {
+  display: flex;
+  gap: 16px;
+  padding-top: 9px;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 16px;
+  margin-top: 28px;
+}
+.card p {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+  color: #ffffff;
+}
+
+.card h2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+}
+
+.card-footer2 a {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+footer {
+  background: #000000;
+  color: #ffffff;
+}
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 56px;
+  gap: 33px;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  text-align: center;
+  align-items: center;
+}
+
+footer .footer-logo {
+  margin-bottom: 32px;
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+footer .social-logo {
+  margin-top: 32px;
+  display: flex;
+  gap: 13px;
+  justify-content: center;
+}
+footer .flex {
+  padding-top: 50px;
+  padding-bottom: 119px;
+}
+
+.card-footer3 a,
+.links a {
+  display: flex;
+  gap: 22px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.social-logo path {
+  fill: #ffffff;
+}
+
+.copyright {
+  padding: 34px 60px 56px 60px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
