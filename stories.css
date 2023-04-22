@@ -76,6 +76,7 @@ nav ul li {
   color: #000000;
 }
 header nav button {
+  color: #dfdfdf;
   background: #000000;
   width: 100%;
   min-height: 48px;
@@ -292,15 +293,28 @@ footer .flex {
 .header button:hover {
   background: #dfdfdf;
   color: #000000;
+  transition: 2s ease-in-out;
 }
-.header button a:hover {
-  color: #000000;
+footer a:hover {
+  color: #bc7198;
+  transition: 2s ease-in-out;
 }
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-30px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
 .card-footer2:hover,
 .card-footer1:hover {
   text-decoration-line: underline;
   color: #ffffff;
-  transition: all 0, 3s;
+  animation-name: slideInLeft;
+  animation-duration: 2s;
 }
 
 .copyright {
@@ -314,6 +328,11 @@ footer .flex {
   color: #ffffff;
   mix-blend-mode: normal;
   opacity: 0.5;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -380,6 +399,7 @@ footer .flex {
     color: #000000;
   }
   .invisible button {
+    color: #dfdfdf;
     width: 158px;
     margin-left: 37px;
     font-weight: 700;
