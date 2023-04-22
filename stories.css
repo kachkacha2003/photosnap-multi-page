@@ -169,21 +169,24 @@ header nav button {
   position: relative;
   cursor: pointer;
   transition: transform 0.5s ease-out;
-  
 }
 
 .img-bg:hover {
-    transform: translateY(-30px);
-    transition: transform 0.5s ease-out;
-    border-bottom: 6px solid;
-    border-image: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%) ;
-    border-image-slice: 1;
-    width: 100%;
-    
+  transform: translateY(-30px);
+  transition: transform 0.5s ease-out;
+  border-bottom: 6px solid;
+  border-image: linear-gradient(
+    26.57deg,
+    #ffc593 0%,
+    #bc7198 43.29%,
+    #5a77ff 83.33%
+  );
+  border-image-slice: 1;
+  width: 100%;
 }
 .footer-grid {
-    display: grid;
-    grid-template-columns: auto auto;
+  display: grid;
+  grid-template-columns: auto auto;
 }
 .card {
   padding: 215px 41px 40px 41px;
@@ -446,6 +449,18 @@ footer .flex {
     margin-bottom: -20px;
   }
 }
+
+@media screen and (min-width: 1000px) {
+  .section2 {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+  .header {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
 @media screen and (min-width: 1440px) {
   .section2 {
     display: grid;
@@ -464,4 +479,26 @@ footer .flex {
   .footer-grid {
     display: grid;
     grid-template-columns: 50% 50%;
+  }
+
+  .navigation .flex {
+    flex-direction: column;
+    transform: translateX(350%);
+    align-items: self-start;
+  }
+  .footer-grid {
+    padding: 0px 101px;
+  }
+  .social-logo {
+    transform: translateY(-430%);
+  }
+  .footer-logo {
+    transform: translateY(230%);
+  }
+  card-footer2 {
+    transform: translateY(130%);
+  }
+  .copyrightDiv {
+    transform: translateY(-600%);
+  }
 }
