@@ -284,6 +284,7 @@ label li {
   align-items: center;
   justify-content: center;
   gap: 56px;
+  background-color: var(--purewhite);
 }
 .lowerH {
   font-family: "DMSans-Bold";
@@ -516,8 +517,7 @@ label li {
   #nav_bar {
     display: flex;
     align-items: center;
-    width: 97%;
-    padding: 24px 28px;
+    width: calc(100% - 56px);
   }
   .create_and_share {
     display: flex;
@@ -734,5 +734,10 @@ label li {
 @media (min-width: 4060px) {
   .item3 {
     left: 40%;
+  }
+}
+@media (min-width: 4560px) {
+  .item3 {
+    left: 45%;
   }
 }
