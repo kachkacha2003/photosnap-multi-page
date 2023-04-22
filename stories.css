@@ -516,11 +516,17 @@ footer a:hover {
     display: grid;
     grid-template-columns: 50% 50%;
   }
+  .grid2 {
+    margin-top: 50px;
+  }
 
   .navigation .flex {
     flex-direction: column;
     transform: translateX(350%);
     align-items: self-start;
+  }
+  footer .container {
+    padding: 0;
   }
   .footer-grid {
     padding: 0px 101px;
@@ -531,9 +537,7 @@ footer a:hover {
   .footer-logo {
     transform: translateY(230%);
   }
-  card-footer2 {
-    transform: translateY(130%);
-  }
+
   .copyrightDiv {
     transform: translateY(-600%);
   }
