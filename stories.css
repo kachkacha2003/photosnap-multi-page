@@ -345,6 +345,8 @@ footer .flex {
     line-height: 16px;
     letter-spacing: 2px;
     border: none;
+    cursor: pointer;
+    transition: all 0.3s;
   }
   .menuBar {
     opacity: 0;
@@ -372,6 +374,7 @@ footer .flex {
   .footer-grid {
     display: grid;
     grid-template-columns: auto auto;
+    min-width: 100%;
   }
   .grid1 {
     display: flex;
