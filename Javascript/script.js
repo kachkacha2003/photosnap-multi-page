@@ -62,6 +62,18 @@ function change() {
   }
 }
 
+const fixedButton = document.getElementById("fixed-button");
+const pageHeight = document.documentElement.scrollHeight;
+const scrollThreshold = pageHeight * 0.2;
+
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > scrollThreshold) {
+    fixedButton.style.display = "block";
+  } else {
+    fixedButton.style.display = "none";
+  }
+});
+
 // Code below is used for magic uncomment it.
 
 // const background = document.querySelector(".background_image");
