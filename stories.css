@@ -286,6 +286,22 @@ footer .flex {
 .social-logo path {
   fill: #ffffff;
 }
+.social-logo path:hover {
+  fill: #5a77ff;
+}
+.header button:hover {
+  background: #dfdfdf;
+  color: #000000;
+}
+.header button a:hover {
+  color: #000000;
+}
+.card-footer2:hover,
+.card-footer1:hover {
+  text-decoration-line: underline;
+  color: #ffffff;
+  transition: all 0, 3s;
+}
 
 .copyright {
   padding: 34px 60px 56px 60px;
