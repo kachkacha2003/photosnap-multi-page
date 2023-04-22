@@ -168,3 +168,49 @@ input:checked + .slider {
 .choosed {
   opacity: 1;
 }
+.planHeaders {
+  font-family: "DMSans-Bold";
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  color: var(--pureblack);
+  margin-bottom: 16px;
+}
+.plancontent {
+  border-bottom: 1px solid #dfdfdf;
+  padding-bottom: 24px;
+  margin-bottom: 23.5px;
+}
+.plantype {
+  font-family: "DMSans-Bold";
+  font-size: 10px;
+  line-height: 13px;
+  letter-spacing: 1.66667px;
+  color: var(--pureblack);
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.plancheck {
+  width: 16px;
+  height: 12px;
+  margin-top: 8px;
+}
+.planflexdiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.plan_inner {
+  padding: 0px 28px;
+  margin: 64px 0px;
+}
+.features_header {
+  font-family: "DMSans-Bold";
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  color: var(--pureblack);
+  border-bottom: 1px solid var(--pureblack);
+  padding-bottom: 23px;
+  margin-bottom: 23px;
+}
