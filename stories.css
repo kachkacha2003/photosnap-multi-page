@@ -97,6 +97,7 @@ header nav button {
 }
 .img1 img {
   display: block;
+  min-width: 100%;
 }
 
 .header-content {
@@ -287,8 +288,21 @@ footer .flex {
 .social-logo path {
   fill: #ffffff;
 }
-.social-logo path:hover {
-  fill: #5a77ff;
+.social-logo .facebook path:hover {
+  fill: url(#a);
+}
+.social-logo .youtube path:hover {
+  fill: url(#b);
+}
+.social-logo .twitter path:hover {
+  fill: url(#c);
+}
+
+.social-logo .pinterest path:hover {
+  fill: url(#d);
+}
+.social-logo .instagram path:hover {
+  fill: url(#e);
 }
 .header button:hover {
   background: #dfdfdf;
@@ -315,6 +329,11 @@ footer a:hover {
   color: #ffffff;
   animation-name: slideInLeft;
   animation-duration: 2s;
+}
+li:hover {
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.3;
 }
 
 .copyright {
