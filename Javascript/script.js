@@ -11,6 +11,7 @@ function scrollUp() {
   }, 15);
 }
 
+
 const checkbox = document.querySelector("#checkbox");
 checkbox.addEventListener("change", function () {
   if (this.checked) {
@@ -42,3 +43,4 @@ window.addEventListener("resize", function () {
     }
   }
 });
+
