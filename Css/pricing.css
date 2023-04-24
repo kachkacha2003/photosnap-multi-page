@@ -103,6 +103,10 @@ body {
   justify-content: center;
   cursor: pointer;
 }
+.plan_btn:hover {
+  background-color: #dfdfdf;
+  color: var(--pureblack);
+}
 .plan_btnB {
   color: var(--pureblack);
   background-color: var(--purewhite);
@@ -113,7 +117,6 @@ body {
   background-size: cover;
   max-height: 280px;
 }
-
 .beta_arrow {
   margin-top: 24px;
 }
@@ -240,7 +243,7 @@ input:checked + .slider {
 }
 .section-three {
   position: relative;
-  background-image: url(../Assets/shared/mobile/bg-beta.jpg);
+  background-image: url(../Assets/shared/desktop/bg-beta.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -289,7 +292,7 @@ input:checked + .slider {
   color: var(--purewhite);
 }
 @media (min-width: 768px) {
-  #colorful_divider_left_pricing {
+  .colorful_divider_left2 {
     width: 6px;
     height: 144px;
     top: 220px;
@@ -421,6 +424,8 @@ input:checked + .slider {
     align-items: center;
     justify-content: space-between;
     height: 144px;
+    max-width: 1110px;
+    margin: auto;
   }
   .beta-h1 {
     margin: 0px;
@@ -442,5 +447,62 @@ input:checked + .slider {
       #bc7198 43.29%,
       #5a77ff 83.33%
     );
+  }
+}
+@media (min-width: 1440px) {
+  .tablet_prices {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .align_right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .pricing_white {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 311px;
+    width: 270px;
+    padding: 56px 40px 40px 40px;
+    margin: 0px;
+  }
+  .plan_name {
+    text-align: center;
+  }
+  .plan_txt {
+    text-align: center;
+    width: 100%;
+  }
+  .pricing_section {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 160px;
+    margin-top: 8px;
+  }
+
+  .middle_black {
+    padding: 88px 40px 71px 40px;
+  }
+  .flex_linear {
+    display: flex;
+    flex-direction: column;
+  }
+  .pro_linear {
+    background: linear-gradient(
+      26.57deg,
+      #ffc593 0%,
+      #bc7198 43.29%,
+      #5a77ff 83.33%
+    );
+    height: 6px;
+    width: 100%;
   }
 }

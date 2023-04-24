@@ -1,5 +1,5 @@
 "user strict";
-
+// dyamic scroll up button (appears when scroll height is more then 20% of page height)
 function scrollUp() {
   const scrollStep = -window.scrollY / (500 / 10);
   const scrollInterval = setInterval(() => {
@@ -10,6 +10,8 @@ function scrollUp() {
     }
   }, 15);
 }
+
+//this function prevents scroll when burger menu is opened
 const checkbox = document.querySelector("#checkbox");
 checkbox.addEventListener("change", function () {
   if (this.checked) {
@@ -40,6 +42,7 @@ window.addEventListener("resize", function () {
   }
 });
 
+//pricing page function to change price from month to year and back
 const annual = document.getElementById("annual_type");
 const annual1 = document.getElementById("annual1");
 const annual2 = document.getElementById("annual2");
@@ -61,7 +64,6 @@ function change() {
     price3.innerHTML = "$99.00";
   }
 }
-
 const fixedButton = document.getElementById("fixed-button");
 const pageHeight = document.documentElement.scrollHeight;
 const scrollThreshold = pageHeight * 0.2;
