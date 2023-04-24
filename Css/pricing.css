@@ -111,6 +111,7 @@ body {
   background-image: url(../Assets/shared/mobile/bg-beta.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  max-height: 280px;
 }
 
 .beta_arrow {
@@ -225,4 +226,58 @@ input:checked + .slider {
   padding-bottom: 23px;
   margin-bottom: 23px;
 }
-
+.image_container2 {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: -3px;
+  position: relative;
+  max-height: 500px;
+}
+@media (min-width: 768px) {
+  #colorful_divider_left_pricing {
+    width: 6px;
+    height: 144px;
+    top: 220px;
+    background: linear-gradient(
+      26.57deg,
+      #ffc593 0%,
+      #bc7198 43.29%,
+      #5a77ff 83.33%
+    );
+    position: absolute;
+  }
+  .first_container {
+    max-height: 490px;
+  }
+  .image_container2 {
+    height: 490px;
+  }
+  .yearly {
+    margin: 112px 0 40px;
+  }
+  .tablet_prices {
+    display: flex;
+    justify-content: space-between;
+  }
+  .pricing_white {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: 198px;
+    padding: 40px 48px 40px 40px;
+    margin-bottom: 24px;
+  }
+  .plan_name {
+    text-align: start;
+  }
+  .plan_txt {
+    text-align: start;
+    width: 65%;
+  }
+  .pro_linear {
+    display: none;
+  }
+  .plan_btn{
+    width: 270px;
+  }
+}
