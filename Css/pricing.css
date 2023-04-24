@@ -456,6 +456,9 @@ input:checked + .slider {
     justify-content: space-between;
     width: 100%;
   }
+  .plan_inner {
+    margin-bottom: 160px;
+  }
   .align_right {
     display: flex;
     flex-direction: column;

@@ -75,34 +75,3 @@ window.addEventListener("scroll", () => {
     fixedButton.style.display = "none";
   }
 });
-
-// Code below is used for magic uncomment it.
-
-// const background = document.querySelector(".background_image");
-// let xPos = 300;
-// let yPos = 1000;
-// let xDirection = 1;
-// let yDirection = 1;
-
-// function moveBackground() {
-//   xPos += 4 * xDirection;
-//   yPos += 4 * yDirection;
-//   background.style.left = xPos + "px";
-//   background.style.top = yPos + "px";
-//   const vw = Math.max(
-//     document.documentElement.clientWidth || 0,
-//     window.innerWidth || 0
-//   );
-//   const vh = Math.max(
-//     document.documentElement.clientHeight || 0,
-//     window.innerHeight || 0
-//   );
-//   if (xPos + background.clientWidth >= vw || xPos <= 0) {
-//     xDirection *= -1;
-//   }
-//   if (yPos + background.clientHeight >= vh || yPos <= 0) {
-//     yDirection *= -1;
-//   }
-//   requestAnimationFrame(moveBackground);
-// }
-// moveBackground();
