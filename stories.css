@@ -315,10 +315,14 @@ footer a:hover {
 }
 
 @keyframes slideInLeft {
-  from {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
     transform: translateX(-30px);
   }
-  to {
+  100% {
     transform: translateX(0);
   }
 }
