@@ -92,7 +92,7 @@
     }
     .section-three {
         position: relative;
-        background-image: url(starter-code/assets/shared/tablet/bg-beta.jpg);
+        background-image: url(./Assets/shared/tablet/bg-beta.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -219,7 +219,7 @@
     }
     .section-three {
         position: relative;
-        background-image: url(starter-code/assets/shared/desktop/bg-beta.jpg);
+        background-image: url(./Assets/shared/desktop/bg-beta.jpg);
     }
     .beta {
         padding: 68px 100px;
