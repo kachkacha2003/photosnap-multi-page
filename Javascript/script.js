@@ -11,7 +11,7 @@ function scrollUp() {
   }, 15);
 }
 
-//this function prevents scroll when burger menu is opened
+
 const checkbox = document.querySelector("#checkbox");
 checkbox.addEventListener("change", function () {
   if (this.checked) {
@@ -41,6 +41,7 @@ window.addEventListener("resize", function () {
     }
   }
 });
+
 
 //pricing page function to change price from month to year and back
 const annual = document.getElementById("annual_type");
@@ -75,3 +76,4 @@ window.addEventListener("scroll", () => {
     fixedButton.style.display = "none";
   }
 });
+
