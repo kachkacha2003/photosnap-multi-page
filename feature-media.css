@@ -1,8 +1,5 @@
 @media screen and (min-width: 768px) {
-    html, body {
-        max-width: 768px;
-    }
-    .btn, .hero-mobile, .hero-desktop {
+    .btn, .menu, body.dimmed::after, .hero-mobile, .hero-desktop {
         display: none;
     }
     .menu-clasic, .hero-tablet {
@@ -53,25 +50,30 @@
         margin-bottom: 21px;
     }
     .text-p {
-        max-width: 387px;
+        max-width: 50%;
     }
     .text {
-        max-width: 495px;
+        width: 100%;
         height: 490px;
         padding: 173px 54px;
         z-index: 3;
     }
+    .images-cont {
+        width: 400px;
+    }
     .hero-tablet {
-        position: absolute;
-        right: 495px;
-        left: 495px;
+        object-fit: cover;
+        width: 100%;
+        height: 485px;
     }
     .section-one {
-        overflow: hidden;
+        display: flex;
+        flex-direction: row-reverse;
     }
     .section-two {
         padding: 112px 38px;
         display: flex;
+        justify-content: space-around;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 13px;
@@ -84,8 +86,7 @@
         margin-bottom: 56px;
     }
     .txt-p {
-        width: 339px;
-        height: 75px;
+        width: 399px;
     }
     .unlimit {
         margin-bottom: 40px;
@@ -166,12 +167,18 @@
     }
 }
 
-
+@media screen and (min-width: 1000px) {
+    .section-two {
+        padding: 112px 38px;
+        justify-content: space-around;
+        gap: 13px;
+    }
+    .txt-p {
+        width: 350px;
+    }
+}
 
 @media screen and (min-width: 1440px) {
-    html, body {
-        max-width: 1440px;
-    }
     .btn, .hero-mobile, .hero-tablet {
         display: none;
     }
@@ -199,19 +206,24 @@
         top: 245px;
         left: -69px;
     }
+    .text-p {
+        max-width: 90%;
+    }
     .text {
-        max-width: 610px;
+        width: 50%;
         padding: 173px 112px;
-        z-index: 3;
     }
     .hero-desktop {
-        position: absolute;
-        right: 610px;
-        left: 610px;
+        width: 100%;
+        height: 485px;
+        object-fit: cover;
+    }
+    .images-cont {
+        width: 70%;
     }
     .section-two {
-        padding: 160px 165px;
-        gap: 30px;
+        padding: 160px 100px;
+        gap: 50px;
         row-gap: 104px;
     }
     .txt {
@@ -306,5 +318,59 @@
         flex-direction: column;
         gap: 86px;
     }
+}
+
+@media screen and (min-width: 2100px) {
+    .section-two {
+        padding: 112px 0px;
+        gap: 43px;
+    }
+    .txt-p {
+        width: 550px;
+    }
+}
+
+@media screen and (min-width: 2800px) {
+    body {
+        max-width: 2800px;
+        margin: auto;
+    }
+    header {
+        height: 150px;
+    }
+    .text {
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+    .text-p {
+        font-size: 25px;
+        text-align: center;
+    }
+    .hero-desktop {
+        height: 595px;
+    }
+    .section-two {
+        height: 800px;
+    }
+    .section-three {
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .line-two {
+        width: 400px;
+        bottom: 200px;
+        left: -197px;
+    }
+    footer {
+        height: 450px;
+    }
+}
+
+@media screen and (min-width: 4200px) {
     
 }
