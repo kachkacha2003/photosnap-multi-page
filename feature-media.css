@@ -173,8 +173,25 @@
         justify-content: space-around;
         gap: 13px;
     }
+    .section-one {
+        overflow: hidden;
+    }
+    .text {
+        padding: 173px 100px;
+        min-width: 500px;
+    }
     .txt-p {
         width: 350px;
+    }
+    .hero-tablet {
+        display: none;
+    }
+    .hero-desktop {
+        display: flex;
+        height: 485px;
+    }
+    .images-cont {
+        min-width: 550px;
     }
 }
 
