@@ -264,6 +264,7 @@ footer {
 .footer-logo {
     width: 200px;
     margin: 56px 0 34px 0;
+    cursor: pointer;
 }
 .social-icons {
     display: flex;
