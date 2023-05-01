@@ -265,6 +265,7 @@ footer .social-logo {
   display: flex;
   gap: 13px;
   justify-content: center;
+  cursor: pointer;
 }
 footer .flex {
   padding-top: 50px;
