@@ -258,6 +258,7 @@ a {
   text-decoration: none;
   color: #ffffff;
   cursor: pointer;
+  z-index: 2;
 }
 
 footer .social-logo {
@@ -478,6 +479,9 @@ li:hover {
   .navigation .flex {
     flex-direction: row;
   }
+  #nav {
+    z-index: 1;
+  }
   footer .social-logo {
     position: absolute;
   }
@@ -564,5 +568,14 @@ li:hover {
 
   .copyrightDiv {
     transform: translateY(-600%);
+  }
+
+  .invisible ul li {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height */
+
+    letter-spacing: 2px;
   }
 }
