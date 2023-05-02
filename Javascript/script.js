@@ -50,21 +50,31 @@ const annual2 = document.getElementById("annual2");
 const price1 = document.getElementById("price1");
 const price2 = document.getElementById("price2");
 const price3 = document.getElementById("price3");
+const planperiods = document.querySelectorAll(".plan_period");
+
 function change() {
+  const planperiods = document.querySelectorAll(".plan_period");
   if (annual.checked) {
     annual1.classList.remove("choosed");
     annual2.classList.add("choosed");
     price1.innerHTML = "$190.00";
     price2.innerHTML = "$390.00";
     price3.innerHTML = "$990.00";
+    planperiods.forEach((planperiod) => {
+      planperiod.innerHTML = "per year";
+    });
   } else {
     annual1.classList.add("choosed");
     annual2.classList.remove("choosed");
     price1.innerHTML = "$19.00";
     price2.innerHTML = "$39.00";
     price3.innerHTML = "$99.00";
+    planperiods.forEach((planperiod) => {
+      planperiod.innerHTML = "per month";
+    });
   }
 }
+
 const fixedButton = document.getElementById("fixed-button");
 const pageHeight = document.documentElement.scrollHeight;
 const scrollThreshold = pageHeight * 0.2;
